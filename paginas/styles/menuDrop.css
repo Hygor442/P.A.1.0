@@ -72,6 +72,9 @@ nav ul ul li a{
 }
 
 @media all and (max-width:968px){
+    body{
+        background: white;
+    }
     header{
         position: inherit;
     }
@@ -92,11 +95,11 @@ nav ul ul li a{
         opacity: 1;
         visibility: visible;
     }
+    nav ul ul li{
+        border-bottom: 1px solid cyan;
+    }
     nav ul ul ul li{
         position: static;
-    }
-    nav ul ul li{
-        border-bottom: 0px;
     }
     nav ul ul a{
         padding-left: 40px;
@@ -116,7 +119,7 @@ nav ul ul li a{
         display: block;
         color: black;
         position: absolute;
-        right: 5%;
+        left: 5%;
         top: 5%;
         line-height: 40px;
         font-size:40px ;
@@ -131,19 +134,42 @@ nav ul ul li a{
     [id^=btn]:checked +ul{
         display: block;
     }
+    main{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    main h2{
+        text-align: center;
+    }
+    main ol{
+        margin: 0;
+        padding-left: 2rem;
+    }
+    main p{
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
     main ul{
         display: block;
     }
-    main,footer{
+    .box{
         width: 100%;
     }
     .conteiner{
+        width: 100%;
         display: flex;
         justify-content: center;
-        flex-direction:column ;
+        flex-wrap: wrap;
+    }
+    .conteiner iframe{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
     }
 }
-@media(max-width:400px){
+/*@media(max-width:400px){
     body{
         background: white;
     }
@@ -194,3 +220,4 @@ nav ul ul li a{
         
     }
 }
+*/
